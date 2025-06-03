@@ -1,0 +1,33 @@
+*{
+    font-family: Bebas Neue;
+}
+.header{
+    overflow: hidden;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+.middle img{
+    width: 50px;
+    height: auto;
+}
+
+
+.right a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+@media screen and (max-width : 500px){
+    .header{
+        flex-direction: column;
+    }
+}
+
+.hero{
+    text-align: center;
+    margin-right: 50px;
+}
