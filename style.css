@@ -1,5 +1,10 @@
 *{
+    
     font-family: Bebas Neue;
+}
+body{
+    background-color: white;
+    color: black;
 }
 .header{
     overflow: hidden;
@@ -30,4 +35,11 @@
 .hero{
     text-align: center;
     margin-right: 50px;
+}
+
+.darkactive{
+    *{
+        background-color: black;
+    color: white;
+    }
 }
