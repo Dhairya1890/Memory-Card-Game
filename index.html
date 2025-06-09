@@ -17,14 +17,11 @@
             <a href="#More Games">More Games</a>
             <a href="#About">About</a>
         </div> <!--for About, More Games -->
-        <div class="dark-mode">
-            <button id="dark" type="button">Dark</button>
-        </div>
     </div>
     <div class="hero">
         <h1>Welcome to Neuron Games</h1>
     </div>
-    <div class="memory-game">
+    <div class="memory-game" id="game-board">
     <div class="memory-card">
         <div class="front-face">
             <img src="assests\Neuron Games.png" alt="NG">
@@ -122,8 +119,9 @@
         </div>
         <div class="back-face"><img src="assests\star2.png" alt="sparke-star"></div>
     </div>
-
     </div>
+    <div class="score">Score: <span id="score">0</span></div>
+
     <script src="script.js"></script>
 </body>
 </html>
