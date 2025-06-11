@@ -104,3 +104,8 @@
         margin: 5px 0;
       }
     }
+
+    .score{
+      text-align: center;
+      font-size: xx-large;
+    }

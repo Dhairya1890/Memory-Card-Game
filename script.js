@@ -6,70 +6,6 @@ function flipcard(){
 card1.forEach(card => card.addEventListener("click", flipcard))
 
 
-//   const cards = document.querySelectorAll('.memory-card');
-//   let hasFlippedCard = false;
-//   let lockBoard = false;
-//   let firstCard, secondCard;
-//   let score = 0;
-
-//   const scoreDisplay = document.getElementById('score');
-
-//   function flipCard() {
-//     if (lockBoard || this === firstCard) return;
-
-//     this.classList.add('flip');
-
-//     if (!hasFlippedCard) {
-//       hasFlippedCard = true;
-//       firstCard = this;
-//       return;
-//     }
-
-//     secondCard = this;
-//     checkForMatch();
-//   }
-
-//   function checkForMatch() {
-//     const firstImage = firstCard.querySelector('.back-face img').src;
-//     const secondImage = secondCard.querySelector('.back-face img').src;
-
-//     if (firstImage === secondImage) {
-//       // It's a match!
-//       score += 1;
-//       updateScore();
-//       disableCards();
-//     } else {
-//       unflipCards();
-//     }
-//   }
-
-//   function updateScore() {
-//     scoreDisplay.textContent = score;
-//   }
-
-//   function disableCards() {
-//     firstCard.removeEventListener('click', flipCard);
-//     secondCard.removeEventListener('click', flipCard);
-//     resetBoard();
-//   }
-
-//   function unflipCards() {
-//     lockBoard = true;
-//     setTimeout(() => {
-//       firstCard.classList.remove('flip');
-//       secondCard.classList.remove('flip');
-//       resetBoard();
-//     }, 1000);
-//   }
-
-//   function resetBoard() {
-//     [hasFlippedCard, lockBoard] = [false, false];
-//     [firstCard, secondCard] = [null, null];
-//   }
-
-//   // Attach event listener to all cards
-//   cards.forEach(card => card.addEventListener('click', flipCard));
-
 
 
 
@@ -144,6 +80,10 @@ card1.forEach(card => card.addEventListener("click", flipcard))
       disableCards();
     } else {
       unflipCards();
+      if(score>=1){
+        score -= 1;
+      }
+      updateScore();
     }
   }
 
